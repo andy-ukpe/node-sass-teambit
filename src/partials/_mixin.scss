@@ -1,0 +1,17 @@
+@mixin button_style {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: #5b70aa;
+  color: $primary_color;
+}
+@mixin jumbotrone_section {
+  background-color: $primary_color;
+  background-image: url(img/illustration-main.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
+  padding: $section_padding;
+  height: $section_height;
+  width: $width;
+}

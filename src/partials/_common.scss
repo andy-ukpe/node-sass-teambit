@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: $text_color;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+i{
+  color: $text_color;
+}
+button{
+  border-color: #2e6da4;
+
+}
+.google-logo{
+  height: 17px;
+}
