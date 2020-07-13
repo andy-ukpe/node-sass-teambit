@@ -6,6 +6,67 @@
   color: #ffffff;
 }
 
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-flex-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.container-flex-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+}
+.col-3 img {
+  height: 90px;
+  margin: 20px 0;
+}
+
+.primary_section {
+  padding: 50px 0;
+  background-color: #fee7d1;
+}
+
+.col-6 {
+  flex-basis: calc(100% / 2);
+}
+.col-6 img {
+  width: 100%;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-basis: calc(100% / 4);
+}
+
+.container-flex-testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +80,10 @@
   margin: auto;
 }
 
+.container hr {
+  width: 100%;
+}
+
 i {
   color: #66503d;
 }
@@ -27,61 +92,119 @@ button {
   border-color: #2e6da4;
 }
 
-.google-logo {
+.google-logo,
+.slack-logo {
   height: 17px;
 }
 
-.container {
-  background-color: #ffffff;
+.text-center {
+  text-align: center;
 }
 
-.container nav {
+h1 {
+  padding: 20px 0;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+h3 {
+  color: #2c4792;
+}
+
+hr {
+  color: darkgrey;
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  line-height: 25px;
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0f47d6;
+  font-weight: 600;
+}
+a i {
+  color: #0f47d6;
+  font-weight: 600;
+}
+
+.header-box {
+  background-color: #ffffff;
+}
+.header-box nav {
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid darkgrey;
 }
-
-.container nav .menu {
+.header-box nav .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
-.container nav .menu li {
+.header-box nav .menu li {
   list-style-type: none;
   padding: 20px;
   line-height: 35px;
 }
-
-.container nav .menu li a {
+.header-box nav .menu li a {
   text-decoration: none;
   color: #66503d;
   font-weight: 700;
 }
-
-.container .jumbotrone {
+.header-box .jumbotrone {
   background-color: #ffffff;
+  background-image: url(....imgillustration-main.jpg);
   background-size: 50%;
   background-repeat: no-repeat;
-  background-image: url(img/illustration-main.jpg);
   background-position: 100% 25%;
   padding: 50px 0;
   height: 500px;
   width: 100%;
 }
-
-.container .jumbotrone .column {
+.header-box .jumbotrone .column {
   width: 50%;
 }
-
-.container .jumbotrone .column h1 {
+.header-box .jumbotrone .column h1 {
   font-size: 50px;
   line-height: 70px;
 }
-
-.container .jumbotrone .column p {
+.header-box .jumbotrone .column p {
   font-size: 15px;
   line-height: 35px;
+}
+
+main .center-img {
+  width: 350px;
+}
+
+.testimonial {
+  background-color: white;
+  border-color: 1px solid #2c4792;
+  border-radius: 25px;
+  padding: 30px;
+  width: 50%;
+}
+
+.sign {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.feedback {
+  flex-basis: calc( (100% / 12) * 2);
+}
+
+.list {
+  flex-basis: calc( (100% / 12) * 2);
+}
+.list ul {
+  list-style-type: none;
 }

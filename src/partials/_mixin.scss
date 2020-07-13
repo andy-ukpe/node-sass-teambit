@@ -7,11 +7,80 @@
 }
 @mixin jumbotrone_section {
   background-color: $primary_color;
-  background-image: url(img/illustration-main.jpg);
+  background-image: url(..\..\img\illustration-main.jpg);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: 100% 25%;
   padding: $section_padding;
   height: $section_height;
   width: $width;
+}
+@mixin container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin primary_section {
+  padding: $section_padding;
+  background-color: $secondary_color;
+}
+@mixin secondary_section {
+  padding: $section_padding;
+  background-color: $primary_color;
+}
+@mixin col-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+  img{
+    height: 90px;
+    margin: 20px 0;
+  }
+}
+@mixin col-4{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-basis: calc(100% / 4);
+}
+@mixin col-6{
+  flex-basis: calc(100% / 2);
+  img{
+    width: 100%;
+  }
+}
+@mixin container-flex-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+@mixin container-flex-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+@mixin container-flex-testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin testimonial{
+  flex-basis: calc(100% / 2);
+}
+@mixin container-flex-footer{
+  display: flex;
+  flex-direction: row;
+}
+@mixin feedback{
+  flex-basis: calc( (100% / 12) * 2);
+}
+@mixin list{
+  flex-basis: calc( (100% / 12) * 2);
+  ul{
+    list-style-type: none;
+  }
 }

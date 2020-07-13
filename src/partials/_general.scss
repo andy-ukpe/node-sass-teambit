@@ -1,3 +1,33 @@
 .btn{
   @include button_style;
 }
+.container-flex{
+  @include container-flex;
+}
+.container-flex-left{
+  @include container-flex-left;
+  @include secondary_section;
+}
+.container-flex-right{
+  @include container-flex-right;
+  @include secondary_section;
+}
+.col-3{
+  @include col-3;
+}
+.primary_section{
+  @include primary_section;
+}
+.col-6{
+  @include col-6;
+}
+.col-4{
+  @include col-4;
+}
+.container-flex-testimonial{
+  @include container-flex-testimonial;
+}
+.container-flex-footer{
+  @mixin container-flex-footer{
+  }
+}

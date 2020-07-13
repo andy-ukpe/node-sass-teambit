@@ -1,0 +1,18 @@
+main{
+  .center-img{
+    width: 350px;
+  }
+}
+.testimonial{
+  background-color: white;
+  border-color: 1px solid $button_color;
+  border-radius: 25px;
+  padding: 30px;
+  width: 50%
+
+}
+.sign{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

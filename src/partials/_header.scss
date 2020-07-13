@@ -1,4 +1,4 @@
-.container{
+.header-box{
   background-color: $primary_color;
   nav{
 
@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid darkgrey;
 
     .menu{
 
@@ -23,7 +22,7 @@
             color:$text_color;
             font-weight: 700;
           }
-          
+
         }
     }
   }
